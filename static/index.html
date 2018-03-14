@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+         content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title> E宠商城 </title>
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_590764_r0mj9hf6nz2rzfr.css">
+</head>
+<body>
+<div id="app">
+
+  <div class="indexnavcon">
+    <div class="main">
+
+       <span class="catordog ">狗狗</span>
+              <span class="c89">|</span>
+              <span data-name="my-place" class="myposition c89 ft13">重庆</span>
+              <i></i>
+            </a>
+  </div>
+
+
+  <!--底部导航-->
+  <div class="footer_guide border-1px">
+    <span class="guide_item" :class="{on: $route.path==='/home'}" @click="goto('/home')">
+      <span class="item_icon">
+        <i class="iconfont icon-shouye"></i>
+      </span>
+      <span>首页</span>
+    </span>
+    <span class="guide_item" :class="{on: $route.path==='/categorys'}" @click="goto('/categorys')">
+      <span class="item_icon">
+        <i class="iconfont icon-fenlei"></i>
+      </span>
+      <span>分类</span>
+    </span>
+    <span class="guide_item" :class="{on: $route.path==='/cart'}" @click="goto('/cart')">
+      <span class="item_icon">
+        <i class="iconfont icon-gouwuche"></i>
+      </span>
+      <span>购物车</span>
+    </span>
+    <span class="guide_item" :class="{on: $route.path==='/person'}" @click="goto('/person')">
+      <span class="item_icon">
+        <i class="iconfont icon-wode"></i>
+      </span>
+      <span>我的E宠</span>
+    </span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,21 +1,20 @@
-# gshop
+2018/3/14项目第一天(我的E宠)
+### 项目总结
+  ##使用到的工具
+    1.使用vue-cli(脚手架)搭建项目
+    2.使用vue-router配置路由器
+    3.使用iconfont字体图标 - 阿里巴巴矢量库（http://www.iconfont.cn/）
+    4.(使用stylus预编译器)stylus中文版参考文档(http://www.zhangxinxu.com/jq/stylus/)
 
-> A Vue.js project
+  ##项目已完成功能
+    底部路由切换功能
+    头部搜索功能
 
-## Build Setup
+  ##遇到的困难
+    路由配置路径不太清楚(已解决)
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
