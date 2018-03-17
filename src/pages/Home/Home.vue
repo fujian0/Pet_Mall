@@ -1,61 +1,66 @@
 <template>
-  <div>
+  <div class="home">
     <!--头部搜索-->
-      <header  class="home_header">
-        <div class="home_header_top">
-          <span  class="dog">狗狗 |</span>
-          <span  class="city">重庆</span>
-          <span class="icon">
+    <header class="home_header">
+      <!--top-->
+      <div class="home_header_top">
+        <span class="dog">狗狗 |</span>
+        <span class="city">重庆</span>
+        <!--下拉字体图标-->
+        <span class="icon">
          <i class="iconfont icon-xiala"></i>
         </span>
-          <span class="search">
+        <!--搜索商品和品牌-->
+        <span class="search">
           <input class="search_input" type="text" placeholder="搜索商品和品牌">
-          <span>
-           <i class="iconfont icon-search"></i>
+          <!--搜索字体图标-->
+          <span class="icon">
+           <i class="iconfont icon-sousuo"></i>
           </span>
         </span>
-          <span class="xiaoxi">
-           <i class="iconfont icon-xiaoxi"></i>
+        <!--信息字体图标-->
+        <span class="xiaoxi">
+           <i class="iconfont icon-xinxi"></i>
         </span>
-
-        </div>
-        <div class="home_menu swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li on">首页</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">狗狗主粮</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">服饰</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">医疗保健</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">零食玩具</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">首页</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">零食玩具</a>
-            </div>
-            <div class="swiper-slide menu_li_slide">
-              <a href="javascript:;" class="menu_li">日用外出</a>
-            </div>
+      </div>
+      <!--首页导航-->
+      <div class="home_menu swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li on">首页</a>
           </div>
-
-          <!--<ul class="menu_ul">
-            <li class="menu_li on" > 首页 </li>
-            <li class="menu_li"> 狗狗主粮 </li>
-            <li class="menu_li"> 服饰 </li>
-            <li class="menu_li"> 医疗保健 </li>
-            <li class="menu_li"> 零食玩具 </li>
-          </ul>-->
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">狗狗主粮</a>
+          </div>
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">服饰</a>
+          </div>
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">医疗保健</a>
+          </div>
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">零食玩具</a>
+          </div>
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">首页</a>
+          </div>
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">零食玩具</a>
+          </div>
+          <div class="swiper-slide menu_li_slide">
+            <a href="javascript:;" class="menu_li">日用外出</a>
+          </div>
         </div>
-      </header >
+
+        <!--<ul class="menu_ul">
+          <li class="menu_li on" > 首页 </li>
+          <li class="menu_li"> 狗狗主粮 </li>
+          <li class="menu_li"> 服饰 </li>
+          <li class="menu_li"> 医疗保健 </li>
+          <li class="menu_li"> 零食玩具 </li>
+        </ul>-->
+      </div>
+    </header>
 
 
     <!--主体-->
@@ -116,16 +121,16 @@
       </div>
       <!--每日疯抢-->
       <div class="mrfq">
-         <!--tb-->
-         <div class="toubu">
-           <div class="mr">
-             <img src="./images/home/new_index_icon_suprice.png" alt="">
-           </div>
-           <div class="gd">
-             <img src="./images/home/gd.png" alt="">
-           </div>
-         </div>
-         <!--滑屏每日商品-->
+        <!--tb-->
+        <div class="toubu">
+          <div class="mr">
+            <img src="./images/home/new_index_icon_suprice.png" alt="">
+          </div>
+          <div class="gd">
+            <img src="./images/home/gd.png" alt="">
+          </div>
+        </div>
+        <!--滑屏每日商品-->
         <div class="qiang_img">
           <ul>
             <li>
@@ -178,11 +183,22 @@
       <div class="vip">
         <img src="./images/home/1zvip.jpg" alt="">
       </div>
+      <!--Go-->
+      <div class="go">
+        <div class="go_left">
+          <a href="javascript:;"><img src="./images/12-1.jpg" alt=""></a>
+          <a href="javascript:;"><img src="./images/12-2.jpg" alt=""></a>
+        </div>
+        <div class="go_right">
+          <a href="javascript:;"><img src="./images/12-1.jpg" alt=""></a>
+          <a href="javascript:;"><img src="./images/12-2.jpg" alt=""></a>
+        </div>
+
+      </div>
       <!--大牌-->
       <div class="dapai">
         <img src="./images/home/1zcj.jpg" alt="">
       </div>
-
       <!--1折轮播图-->
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -207,26 +223,135 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-
       <!--大牌好货-->
       <div class="dapai_haohuo">
         <img src="./images/home/1zdphh.jpg" alt="">
       </div>
+      <!--选购-->
+      <div class="db_rq">
+        <div class="dp_left">
+          <ul class="xg_left">
+            <li><img src="./images/xg/xg1.jpg" alt=""></li>
+            <li><img src="./images/xg/xg2.jpg" alt=""></li>
+            <li><img src="./images/xg/xg3.jpg" alt=""></li>
+            <li><img src="./images/xg/xg4.jpg" alt=""></li>
+            <li><img src="./images/xg/xg5.jpg" alt=""></li>
+            <li><img src="./images/xg/xg6.jpg" alt=""></li>
+            <li><img src="./images/xg/xg7.jpg" alt=""></li>
+            <li><img src="./images/xg/xg8.jpg" alt=""></li>
+            <li><img src="./images/xg/xg9.jpg" alt=""></li>
+            <li><img src="./images/xg/xg10.jpg" alt=""></li>
+          </ul>
+        </div>
 
+        <div class="dp_right">
+          <ul class="xg_right">
+            <li><img src="./images/xg/xg1.jpg" alt=""></li>
+            <li><img src="./images/xg/xg2.jpg" alt=""></li>
+            <li><img src="./images/xg/xg3.jpg" alt=""></li>
+            <li><img src="./images/xg/xg4.jpg" alt=""></li>
+            <li><img src="./images/xg/xg5.jpg" alt=""></li>
+            <li><img src="./images/xg/xg6.jpg" alt=""></li>
+            <li><img src="./images/xg/xg7.jpg" alt=""></li>
+            <li><img src="./images/xg/xg8.jpg" alt=""></li>
+            <li><img src="./images/xg/xg9.jpg" alt=""></li>
+            <li><img src="./images/xg/xg10.jpg" alt=""></li>
+          </ul>
+
+        </div>
 
       </div>
+      <!--最惨奖-->
+      <div class="zc">
+        <a href="javascript:;">
+          <img src="./images/zc1.jpg" alt="">
+        </a>
+      </div>
+      <!--dianzhang-->
+      <div class="dianzhang">
+        <a href="javascript:;">
+          <img src="./images/zc2.jpg" alt="">
+        </a>
+      </div>
+      <!--特别星球-->
+      <div class="xingqiu">
+        <a href="javascript:;">
+          <img src="./images/19-xing.jpg" alt="">
+        </a>
+      </div>
+      <!--潮品-->
+      <div class="chaopin">
+        <div class="chaopin_left">
+          <a href="javascript:;">
+            <img src="./images/20-1caho.jpg" alt="">
+          </a>
+        </div>
+        <!--you-->
+        <div class="chaopin_right">
+          <div class="cp_left">
+            <a href="javascript:;">
+              <img src="./images/20-2chao.jpg" alt="">
+            </a>
+          </div>
+          <div class="cp_right">
+            <a href="javascript:;">
+              <img src="./images/20-3chao.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--特色栏目-->
+      <div class="lanmu">
+        <a href="javascript:;">
+          <img src="./images/ts.jpg" alt="">
+        </a>
+      </div>
+      <!--底部-->
+      <div class="footer_z">
+        <div class="footer_left">
+          <div class="f_l">
+            <a href="javascript:;">
+              <img src="./images/22-1e.jpg" alt="">
+            </a>
+          </div>
+          <div class="f_l">
+            <a href="javascript:;">
+              <img src="./images/22-2e.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer_right">
+          <div class="f_r">
+            <a href="javascript:;">
+              <img src="./images/22-2e.jpg" alt="">
+            </a>
+          </div>
+          <div class="f_r">
+            <a href="javascript:;">
+              <img src="./images/22-1e.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
 
   </div>
 
 </template>
 
 <script>
-  import swiper from 'swiper'
+  import Swiper from 'swiper'
   import 'swiper/dist/css/swiper.min.css'
+
   export default {
     mounted() {
-      new swiper('.swiper-container', {
-        loop: true,
+      new Swiper('.swiper-container', {
+
         // 配置小圆点
         pagination: {
           // el必须是小圆点的结构
@@ -239,9 +364,7 @@
       })
 
       /*首页nav*/
-      new swiper('.findnavlist', '.swiper-container', {
-        el: '.findnavlist'
-      })
+      new Swiper('.findnavlist', '.swiper-container', {})
     }
   }
 </script>
@@ -271,22 +394,27 @@
         margin-left 20px
         width 100%
         .icon
+          display inline-block
+          vertical-align middle
           .iconfont
-            font-size 12px
+            font-size 30px
         .search
           width 50%
           padding 5px
-          margin 0 10px
+          margin-right 15px
           border-radius 5px
           background #ddd
           .search_input
             outline none
-            background #ddd
+            background #919191
             border 0
+          .icon
+            .icon-sousuo
+              font-size 20px
+
         .xiaoxi
           text-align center
-          .iconfont
-            font-size 25px
+
 
       .swiper-container
         margin-top 20px
@@ -301,120 +429,213 @@
                 color green
                 border-bottom 1px solid green
 
-  .module
-    width 100%
-    .swiper-container
+    .module
       width 100%
-      .swiper-wrapper
+      .swiper-container
         width 100%
-        .swiper-slide
+        .swiper-wrapper
           width 100%
-          .link_to
+          .swiper-slide
+            width 100%
+            .link_to
+              display block
+              width 100%
+              > img
+                display: block
+                width 100%
+      .swiper-pagination
+        > span.swiper-pagination-bullet-active
+          background #02a774
+
+      .currency-adcon1
+        width 100%
+        .divimg
+          width 100%
+          a
             display block
             width 100%
-            > img
-              display: block
+            img
+              display block
               width 100%
-    .swiper-pagination
-      > span.swiper-pagination-bullet-active
-        background #02a774
-
-    .currency-adcon1
-      width 100%
-      .divimg
+              height 100%
+      .E_list
         width 100%
-        a
+        .ect
+          display flex
+          flex-wrap wrap
+          li
+            width 20%
+            img
+              display block
+              width 100%
+      .zpms
+        width 100%
+        img
           display block
           width 100%
-          img
-            display block
-            width 100%
-            height 100%
-    .E_list
-      width 100%
-      .ect
+
+      .mrfq
+        width 100%
         display flex
+        .toubu
+          display block
+          width 100%
+          .mr
+            float left
+          .gd
+            float right
+        .qiang_img
+          margin 10px 0
+          width 100%
+          overflow hidden
+          > ul
+            padding-bottom 10px
+            width 250%
+            display flex
+            > li
+              display flex
+              flex-direction column
+              font-size 12px
+              text-align center
+              margin 0 10px
+              > span
+                font-size 12px
+                margin 5px 0
+                color #999
+                &.price
+                  color red
+              > img
+                width 85px
+                height 85px
+                margin-top 10px
+      .pinpai
+        width 100%
+        img
+          display block
+          width 100%
+
+      .gif
+        width 100%
+        img
+          display block
+          width 100%
+
+      .vip
+        width 100%
+        img
+          display block
+          width 100%
+      .go
+        width 100%
+        display flex
+        .go_left
+        img
+          flex-wrap wrap
+          width 100%
+        .go_right
+        img
         flex-wrap wrap
-        li
-          width 20%
+          width 100%
+
+      .dapai
+        width 100%
+        img
+          display block
+          width 100%
+
+      .dapai_haohuo
+        width 100%
+        img
+          display block
+          width 100%
+
+
+      .db_rq
+        width 100%
+        display flex
+        .dp_left
+          width 100%
+          .xg_left
+            width 100%
+            flex-wrap wrap
+            img
+              width 100%
+        .dp_right
+          width 100%
+          .xg_right
+            width 100%
+            flex-wrap wrap
+            img
+              width 100%
+      .zc
+        width 100%
+        a
+          width 100%
           img
             display block
             width 100%
-    .zpms
-      width 100%
-      img
-        display block
+      .dianzhang
         width 100%
-
-    .mrfq
-      width 100%
-      display flex
-      .toubu
-        display block
+        a
+          width 100%
+          img
+            display block
+            width 100%
+      .xingqiu
         width 100%
-        .mr
-          float left
-        .gd
-          float right
-      .qiang_img
-        margin 10px 0
+        a
+          width 100%
+          img
+            display block
+            width 100%
+      .chaopin
         width 100%
-        overflow hidden
-        >ul
-          padding-bottom 10px
-          width 250%
-          display flex
-          >li
-            display flex
-            flex-direction column
-            font-size 12px
-            text-align center
-            margin 0 10px
-            >span
-              font-size 12px
-              margin 5px 0
-              color #999
-              &.price
-                color red
-            >img
-              width 85px
-              height 85px
-              margin-top 10px
-    .pinpai
-      width 100%
-      img
-        display block
+        display flex
+        .chaopin_left
+          width 50%
+          a
+            width 100%
+          img
+            display block
+            width 100%
+        .chaopin_right
+          width 50%
+          a
+            width 100%
+          img
+            display block
+            width 100%
+
+
+
+      .lanmu
         width 100%
+        a
+          width 100%
+          img
+            display block
+            width 100%
 
-
-    .gif
-      width 100%
-      img
-        display block
+      .footer_z
+        display flex
         width 100%
-
-
-    .vip
-      width 100%
-      img
-        display block
-        width 100%
-    .dapai
-      width 100%
-      img
-        display block
-        width 100%
-
-
-    .dapai_haohuo
-      width 100%
-      img
-        display block
-        width 100%
-
-
-
-
-
+        .footer_left
+          flex-wrap wrap
+          width 100%
+          .f_l
+            a
+              width 100%
+              img
+                width 100%
+                display block
+        .footer_right
+          flex-wrap wrap
+          width 100%
+          .f_r
+            a
+              width 100%
+              img
+                width 100%
+                display block
 </style>
 
