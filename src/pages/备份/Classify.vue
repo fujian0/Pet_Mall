@@ -3,36 +3,32 @@
     <div class="header">
       <div class="tab">
         <div class="tabItem">
-          <router-link to="/categorys/classify" replace>分类</router-link>
+          <router-link to="/classify/types" replace>分类</router-link>
         </div>
         <div class="tabItem">
-          <router-link to="/categorys/brand" replace>品牌</router-link>
+          <router-link to="/classify/brands" replace>品牌</router-link>
         </div>
       </div>
       <div class="search">
         <img src="./search-ico.png">
       </div>
     </div>
+    <keep-alive>
       <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
- /* import './Classify.vue'//分类
-  import './Brand.vue'//品牌*/
+
   export default{
     mounted () {
 
-    },
-    components: {
-
     }
-
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../common/stylus/mixins.styl"
   .clssify
     width 100%
     height 100%

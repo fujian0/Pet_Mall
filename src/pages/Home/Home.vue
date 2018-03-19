@@ -121,58 +121,72 @@
         </div>
 
         <!--每日疯抢-->
-        <div class="mrfq">
-          <!--tb-->
-          <div class="toubu">
-            <div class="mr">
+        <div class="qiang">
+          <div class="qiang_top">
+            <div class="qiang_logo">
               <img src="./images/home/new_index_icon_suprice.png" alt="">
             </div>
-            <div class="gd">
-              <img src="./images/home/gd.png" alt="">
-            </div>
+            <span class="qiang_text">
+              <span>本场结束</span>
+              <span class="number">21</span>
+              <span>:</span>
+              <span class="number">00</span>
+              <span class="more">
+                更多
+                <i class="iconfont icon-xiangyou"></i>
+              </span>
+            </span>
           </div>
-          <!--滑屏每日商品-->
-          <div class="qiang_img">
-            <ul>
-              <li>
+          <div class="qiang_img swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
                 <img src="./images/home/mr1.jpg" alt="">
-                <span class="price">￥2.98</span>
-                <span>省110.52</span>
+                <span class="price">￥8.99</span>
+                <span>省19.52</span>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="./images/home/mr2.jpg" alt="">
-                <span class="price">￥5.99</span>
-                <span>省11.52</span>
+                <span class="price">￥18.99</span>
+                <span>省33.52</span>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="./images/home/mr3.jpg" alt="">
-                <span class="price">￥9.99</span>
-                <span>省5.2</span>
+                <span class="price">￥28.99</span>
+                <span>省53.52</span>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="./images/home/mr4.jpg" alt="">
-                <span class="price">￥7.99</span>
-                <span>省12.99</span>
+                <span class="price">￥9.99</span>
+                <span>省18.52</span>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="./images/home/mr5.jpg" alt="">
-                <span class="price">￥4.99</span>
-                <span>省19.9</span>
+                <span class="price">￥29.99</span>
+                <span>省19.62</span>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="./images/home/mr6.jpg" alt="">
-                <span class="price">￥22.99</span>
-                <span>省16.52</span>
+                <span class="price">￥39.99</span>
+                <span>省7.92</span>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <img src="./images/home/mr7.jpg" alt="">
                 <span class="price">￥12.99</span>
-                <span>9.52</span>
+                <span>省6.52</span>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/home/mr1.jpg" alt="">
+                <span class="price">￥16.99</span>
+                <span>省18.52</span>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/home/mr2.jpg" alt="">
+                <span class="price">￥13.99</span>
+                <span>省16.52</span>
               </li>
             </ul>
           </div>
         </div>
-
 
         <!--品牌力量-->
         <div class="pinpai">
@@ -202,8 +216,6 @@
         <div class="dapai">
           <img src="./images/home/1zcj.jpg" alt="">
         </div>
-
-
         <!--1折轮播图-->
         <div class="daze swiper-container">
           <div class="swiper-wrapper">
@@ -342,11 +354,33 @@
           </div>
 
         </div>
+        <!--联系我们-->
+        <footer class="home_footer">
+          <div class="footer_top">
+            <span>
+              <a href="javascript:;" class="lianjie chuping">触屏版</a>
+            </span>
+            <span>
+              <a href="javascript:;" class="lianjie">手机客户端</a>
+            </span>
+            <span>
+              <a href="javascript:;" class="lianjie">关于我们</a>
+            </span>
+            <span>
+              <a href="javascript:;" class="lianjie">联系我们</a>
+            </span>
+          </div>
+          <p class="copy">
+            <a href="javascript:;" class="lianjie copy_lianjie">
+              &copy;wap.epet.com版权 : 重庆易宠科技有限公司
+            </a>
+          </p>
+        </footer>
       </div>
+    </div>
     </div>
 
 
-  </div>
 
 </template>
 
@@ -389,6 +423,14 @@
           //设置手滑动后还可以自动轮播
           disableOnInteraction: false
         }
+      })
+
+      /*每日疯抢轮播图*/
+      new Swiper('.qiang_img.swiper-container', {
+        //loop:true,//设置手滑动
+        slidesPerView: 3.5,  //设置一页显示的个数
+        disableOnInteraction: false
+
       })
 
 
@@ -504,45 +546,70 @@
             display block
             width 100%
 
-        .mrfq
+
+        .qiang
+          padding  10px 0 0 10px
           width 100%
-          display flex
-          .toubu
-            display block
+          background #fff
+          box-sizing border-box
+          .qiang_top
+            display flex
+            justify-content space-around
+            align-items center
             width 100%
-            .mr
-              float left
-            .gd
-              float right
+            .qiang_logo
+              width 30%
+              >img
+                width 100%
+            .qiang_text
+              font-size 14px
+              display flex
+              justify-content space-around
+              align-items center
+              .number
+                padding 3px 3px
+                border 1px solid gainsboro
+                margin 0 5px
+              .more
+                color #999
+                margin-left 20px
+                .iconfont
+                  font-size 16px
+
           .qiang_img
             margin 10px 0
             width 100%
             overflow hidden
-            > ul
+            >ul
               padding-bottom 10px
               width 250%
               display flex
-              > li
+              >li
                 display flex
                 flex-direction column
                 font-size 12px
                 text-align center
                 margin 0 10px
-                > span
+                >span
                   font-size 12px
                   margin 5px 0
                   color #999
                   &.price
                     color red
-                > img
+                >img
                   width 85px
                   height 85px
                   margin-top 10px
+
+
+
+
         .pinpai
           width 100%
           img
             display block
             width 100%
+
 
         .gif
           width 100%
@@ -667,5 +734,23 @@
                 img
                   width 100%
                   display block
+        .home_footer
+          margin-top 30px
+          text-align center
+          width 100%
+          font-size 14px
+          .footer_top
+            width 100%
+            padding 0 45px 10px 40px
+            box-sizing border-box
+            display flex
+            justify-content space-between
+            .lianjie
+              color black
+              &.chuping
+                color red
+          .copy
+            .copy_lianjie
+              color black
 </style>
 
